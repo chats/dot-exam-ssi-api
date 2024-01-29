@@ -2,11 +2,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ConnectionController } from './connection/connection.controller';
-import { IssueController } from './issue/issue.controller';
-import { VerifyController } from './verify/verify.controller';
-import { IssueService } from './issue/issue.service';
-import { ConnectionService } from './connection/connection.service';
+import { ConnectionController } from './controllers/connection.controller';
+import { IssueController } from './controllers/issue.controller';
+import { VerifyController } from './controllers/verify.controller';
+import { IssueService } from './providers/issue.service';
+import { ConnectionService } from './providers/connection.service';
 
 @Module({
   imports: [],
